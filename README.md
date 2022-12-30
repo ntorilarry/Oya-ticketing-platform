@@ -1,1 +1,1 @@
-Semo Link: https://oyaticket.netlify.app/
+Demo Link: https://oyaticket.netlify.app/
