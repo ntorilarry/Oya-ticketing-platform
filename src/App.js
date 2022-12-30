@@ -1,16 +1,18 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import LogIn from "./pages/LogIn";
-import Register from "./pages/Register";
+import CampaignCreated from "./pages/CampaignCreated";
+import CreateCampaign from "./pages/CreateCampaign";
+import LogIn from "./pages/Welcome";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/">
-          <Route index element={<Navigate replace to="login" />} />
-          <Route path="login" element={<LogIn />} />
-          <Route path="register" element={<Register />} />
+          <Route index element={<Navigate replace to="welcome" />} />
+          <Route path="welcome" element={<LogIn />} />
+          <Route path="create-campaign" element={<CreateCampaign />} />
+          <Route path="campaign-created" element={<CampaignCreated />} />
         </Route>
       </Routes>
     </div>
